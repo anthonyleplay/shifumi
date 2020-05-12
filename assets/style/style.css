@@ -7,3 +7,13 @@
 .bg-backarea2{
     background-color: #dfce97;
 }
+.buttom-go{
+    background-color: #460000;
+    color: #f5f5dc;
+    border: none;
+    border-radius: 1rem;
+    padding: 10px 20px;
+}
+.buttom-go:hover{
+    background-color: #860202;
+}
