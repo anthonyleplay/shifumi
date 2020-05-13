@@ -1,29 +1,43 @@
-.bg-backpage{
+.bg-backpage {
     background-color: #460000;
 }
-.bg-backarea1{
+
+.bg-backarea1 {
     background-color: #f5f5dc;
 }
-.bg-backarea2{
+
+.bg-backarea2 {
     background-color: #dfce97;
 }
-.buttom-go{
+
+.buttom-go {
     background-color: #460000;
     color: #f5f5dc;
     border: none;
     border-radius: 1rem;
     padding: 10px 20px;
 }
-.buttom-go:hover{
+
+.bg-default {
+    background-color: rgb(180, 180, 180);
+}
+
+.buttom-go:hover {
     background-color: #860202;
 }
-#pierre, #feuille ,#ciseaux {
+
+#pierre,
+#feuille,
+#ciseaux {
     filter: grayscale(00%);
-    border: rgb(180, 180, 180) solid 1rem;
 }
-#pierre:hover, #feuille:hover ,#ciseaux:hover {
+
+#pierre:hover,
+#feuille:hover,
+#ciseaux:hover {
     filter: grayscale(25%);
 }
-#resultPlayer{
+
+#resultPlayer {
     transform: scaleX(-1);
 }
