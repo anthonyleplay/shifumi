@@ -1,7 +1,7 @@
 // const player =`Player 1`;
-let player = prompt(`Entrez votre nom :`, `Player 1`);
+let player = prompt(`Entrez votre nom :`, `Xx-D4rk-Warr1or76-xX`);
 if (player == `` || player == undefined) {
-  player = `Player`;
+  player = `Joueur`;
 };
 const png = `Computer`;
 let choiceP;
@@ -57,7 +57,7 @@ function battle() {
     messageResult.style.color = "green";
     sound = new Audio(soundPathWin + soundArrayWin[getRandomInt(soundArrayWin.length)] + ".wav");
     sound.play();
-    tempoBtn(500);
+    tempoBtn(700);
     playerScore++;
 
   } else if (png === "pierre" && choiceP === "ciseaux" || png === "ciseaux" && choiceP === "feuille" || png === "feuille" && choiceP === "pierre") {
@@ -67,7 +67,7 @@ function battle() {
     pngScore++;
     sound = new Audio(soundPathLoose + soundArrayLoose[getRandomInt(soundArrayLoose.length)] + ".wav");
     sound.play();
-    tempoBtn(500);
+    tempoBtn(700);
 
   } else {
     //egalité
@@ -75,7 +75,7 @@ function battle() {
     messageResult.style.color = "blue";
     sound = new Audio(soundPathDraw + soundArrayDraw[getRandomInt(soundArrayDraw.length)] + ".wav");
     sound.play();
-    tempoBtn(500);
+    tempoBtn(700);
   }
 
   scorePlayer.innerText = playerScore;
