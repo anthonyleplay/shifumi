@@ -5,8 +5,10 @@ const max = 3;
 let choiceP;
 let pngScore = 0;
 let playerScore = 0;
+btnShifumi.disabled = true;
 
 pName.innerText = player;
+
 const getRandomInt = (max) => {
   return Math.floor(Math.random() * Math.floor(max));
 }
@@ -19,6 +21,7 @@ function pngChoice() {
 }
 
 function playerChoice(choice) {
+  btnShifumi.disabled = false;
   let card = document.getElementById(choice)
   pierre.style.border = "rgb(180, 180, 180) solid 1rem";
   feuille.style.border = "rgb(180, 180, 180) solid 1rem";
@@ -26,6 +29,12 @@ function playerChoice(choice) {
   card.style.border = "#460000 solid 1rem";
   resultPlayer.src = "assets/img/" + choice + ".png";
   choiceP = choice
+}
+function tempoBtn(temps){
+  btnShifumi.disabled = true;
+  setTimeout(function(){
+    btnShifumi.disabled = false;
+  },temps)
 }
 
 function battle() {
@@ -35,6 +44,10 @@ function battle() {
     // BRAVO
     messageResult.innerText = "BRAVO !";
     messageResult.style.color = "green";
+    let sound = new Audio('assets/sound/bravo.wav');
+    sound.play();
+    tempoBtn(500);
+
     playerScore++;
 
   } else if (png === "pierre" && choiceP === "ciseaux" || png === "ciseaux" && choiceP === "feuille" || png === "feuille" && choiceP === "pierre") {
@@ -42,11 +55,19 @@ function battle() {
     messageResult.innerText = "PERDU !";
     messageResult.style.color = "red";
     pngScore++;
+    let sound = new Audio('assets/sound/mauvais.wav');
+    sound.play();
+    tempoBtn(500);
+   
 
   } else {
     //egalité
     messageResult.innerText = "ÉGALITÉ";
     messageResult.style.color = "blue";
+    let sound = new Audio('assets/sound/ha.wav');
+    sound.volume = 0.5;
+    sound.play();
+    tempoBtn(500);
   }
 
   scorePlayer.innerText = playerScore;

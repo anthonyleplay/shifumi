@@ -22,6 +22,8 @@
     border: rgb(180, 180, 180) solid 1rem;
 }
 #pierre:hover, #feuille:hover ,#ciseaux:hover {
-    filter: grayscale(20%);
-    border: rgb(160, 160, 160) solid 1rem;
+    filter: grayscale(25%);
+}
+#resultPlayer{
+    transform: scaleX(-1);
 }
