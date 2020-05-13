@@ -11,9 +11,9 @@ let sound;
 let soundPathWin = "assets/sound/win/";
 let soundPathLoose = "assets/sound/loose/";
 let soundPathDraw = "assets/sound/draw/";
-let soundArrayWin = ["bravo", "meur", "ouéoué", "ouioui"];
-let soundArrayLoose = ["mauvais", "peau", "regret"];
-let soundArrayDraw = ["ha", "rate", "rien"];
+let soundArrayWin = ["beaute", "bravo", "incroyable", "ouéoué", "ouioui", "sultan", "waaw", "wow"];
+let soundArrayLoose = ["boule-noire", "cheh", "glissé","haha", "mauvais", "peau", "rate", "regret", "wilhelmscream"];
+let soundArrayDraw = ["bluff", "chewbacca", "gros", "ha", "murloc", "pnj", "rien", "wololo"];
 
 const getRandomInt = (max) => {
   return Math.floor(Math.random() * Math.floor(max));
