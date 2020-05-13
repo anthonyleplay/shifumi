@@ -4,7 +4,6 @@ if (player==`` || player==undefined) {
   player = `Player`;
 };
 const png = `Computer`;
-const max = 3;
 let choiceP;
 let pngScore = 0;
 let playerScore = 0;
