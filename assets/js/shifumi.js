@@ -3,45 +3,18 @@ var SHIFUMI = SHIFUMI || {};
 SHIFUMI.Shared = {
   getRandomInt: (max) => Math.floor(Math.random() * Math.floor(max)),
 }
-SHIFUMI.Player = {
-  pts: 1,
-  Init: function(name,score) {
-    this.name= name,
-    this.score= score,
-    console.log(`New Player Created`);
-  },
-  changePlayerName: () => {
-    return this.name = window.prompt(`Entrez votre nom :`, `Anonymous`);
+SHIFUMI = {
+  my_value: 1, //Just for testting
+  Player: class {
+    constructor(name, points) {
+      this.name = name;
+      this.points = points;
+      this.nbVictory = nbVictory;
+    }
   }
-};
-
-
-// class Player {
-//   constructor(name) {
-//     this.name = name;
-//     console.log(`New Player Created`);
-//   }
-//   changePlayerName = () => this.name = window.prompt(`Entrez votre nom :`, `Anonymous`);
-// }
-
-let player1 = new SHIFUMI.Player.Init(SHIFUMI.Player.changePlayerName(), 0);
-console.log(player1.name);
-player1.changePlayerName();
-console.log(player1.name);
-// console.log(player1.changePlayerName());
-let i = 10;
-// do {
-//   console.log(SHIFUMI.Shared.getRandomInt(i));
-//   i--;
-// } while (i >= 0);
-
-
-
-
-// playerName = ( (playerName)) ? `Player 1`: playerName;
-// pName.innerText = playerName;
-
-
-// const playersChoice = (v) => {
-
-// }
+  }
+let player1 = new SHIFUMI.Player;
+player1.points = 100;
+player1.nbVictory = 200;
+player1.name = `Mr XxxxD4rk_5h@d0w_Lh76`;
+console.log(player1);
