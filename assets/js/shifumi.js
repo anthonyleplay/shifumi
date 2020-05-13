@@ -6,7 +6,7 @@ SHIFUMI.Shared = {
 SHIFUMI = {
   my_value: 1, //Just for testting
   Player: class {
-    constructor(name, points) {
+    constructor(name, points, nbVictory) {
       this.name = name;
       this.points = points;
       this.nbVictory = nbVictory;
