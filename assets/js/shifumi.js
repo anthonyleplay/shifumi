@@ -1,5 +1,8 @@
 // const player =`Player 1`;
-const player = prompt(`Entrez votre nom :`, `Player 1`);
+let player = prompt(`Entrez votre nom :`, `Player 1`);
+if (player==`` || player==undefined) {
+  player = `Player`;
+};
 const png = `Computer`;
 const max = 3;
 let choiceP;
