@@ -17,3 +17,12 @@
 .buttom-go:hover{
     background-color: #860202;
 }
+#pierre, #feuille ,#ciseaux {
+    filter: grayscale(00%);
+    border: rgb(180, 180, 180) solid 1rem;
+}
+#pierre:hover, #feuille:hover ,#ciseaux:hover {
+    filter: grayscale(20%);
+    border: rgb(160, 160, 160) solid 1rem;
+    
+}
