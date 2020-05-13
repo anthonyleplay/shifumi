@@ -14,21 +14,21 @@
         <div class="row bg-backarea2 justify-content-center p-3 rounded">
             <div class=" row col-12 col-sm-10 bg-backarea1 justify-content-center text-center p-3 p-md-5 m-2 rounded">
                 <div class="col-4 px-0 bg-secondary" >
-                    <img src="assets/img/pierre.png" alt="Pierre" title="Pierre" width="100%" id="pierre">
+                    <img src="assets/img/pierre.png" alt="Pierre" title="Pierre" width="100%" id="pierre" onclick="playerChoice('pierre')">
                 </div>
                 <div class="col-4 px-0 bg-secondary" >
-                    <img src="assets/img/feuille.png" alt="Feuille" title="Feuille" width="100%" id="feuille">
+                    <img src="assets/img/feuille.png" alt="Feuille" title="Feuille" width="100%" id="feuille" onclick="playerChoice('feuille')">
                 </div>
                 <div class="col-4 px-0 bg-secondary" >
-                    <img src="assets/img/ciseaux.png" alt="Ciseaux" title="Ciseaux" width="100%" id="ciseaux">
+                    <img src="assets/img/ciseaux.png" alt="Ciseaux" title="Ciseaux" width="100%" id="ciseaux" onclick="playerChoice('ciseaux')">
                 </div>
-                <button type="button" class="col-6 col-sm-4 col-lg-3 mt-5 buttom-go" id="btnShifumi"> Go !</button>
+                <button type="button" class="col-6 col-sm-4 col-lg-3 mt-5 buttom-go" id="btnShifumi" onclick="battle()"> Go !</button>
             </div>
 
             <div class="row col-12 col-sm-10 bg-backarea2 justify-content-center text-center py-3 my-2">
-                <div class="col-2 p-2 bg-danger "></div>
+                <div class="col-2 p-2 bg-danger"><img src="" alt="result" width="100%" id="resultPlayer"></div>
                 <span class="px-2">VS</span>
-                <div class="col-2 p-2 bg-danger "></div>
+                <div class="col-2 p-2 bg-danger"><img src="" alt="result" width="100%" id="resultPng"></div>
             </div>
 
             <div class="row col-12 col-sm-10 bg-backarea1 justify-content-center text-center py-5  rounded">
@@ -37,6 +37,7 @@
                     <div id="scorePlayer" class="p-3 bg-danger"></div>
                 </div>
                 <div class="col-4 col-lg-3 pb-3 justify-content-center text-center">
+                    <div id="messageResult"></div>
                     <div class="">SCORE</div>
                 </div>
                 <div class="col-4 col-lg-3 pb-3 justify-content-center text-center">
@@ -47,7 +48,6 @@
 
         </div>
     </div>
-
 
     <script src="assets/js/shifumi.js"></script>
 </body>

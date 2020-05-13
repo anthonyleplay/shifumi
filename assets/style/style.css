@@ -24,5 +24,4 @@
 #pierre:hover, #feuille:hover ,#ciseaux:hover {
     filter: grayscale(20%);
     border: rgb(160, 160, 160) solid 1rem;
-    
 }
